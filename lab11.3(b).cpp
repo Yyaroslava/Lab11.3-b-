@@ -333,6 +333,7 @@ int main() {
 			cout << "¬вед≥ть назву файла ≥ндексу: ";
 			cin >> gname;
 			Print(fname);
+			Print_I(fname, gname);
 			break;
 		case 2:
 			if (strcmp(fname, "") == 0) {
@@ -342,8 +343,9 @@ int main() {
 				cin >> gname;
 			}
 			CreateBIN(fname);
-			Build_Index<Student>(fname, gname);
 			Print(fname);
+			Build_Index<Student>(fname, gname);
+			Print_I(fname, gname);
 			break;
 		case 3:
 			if (strcmp(fname, "") == 0) {
